@@ -1,0 +1,18 @@
+<view class="container">
+  <image class="myBackground" src="/res/images/bg_sub.jpg" style="opacity: 0.8" mode="aspectFill"></image>
+  <view class="dotBorder editor-outer">
+      <canvas-drag id="canvas-drag" graph="{{graph}}" canvas-id='canvas-drag' width="640" height="640"></canvas-drag>
+      <view class="editor-item-wrap">
+        <scroll-view scroll-x>
+          <view style="width: 100rpx;display:inline-block"> 
+            <image wx:for="{{decorators}}" wx:for-item="decorator" wx:for-index="i" class="editor-item" src="{{decorator}}" mode="aspectFit" bindtap="onClick" data-index="{{i}}"></image>
+          </view>
+        </scroll-view>
+      </view>
+      <text class="reminder">右滑查看更多挂件→</text>
+  </view>
+  <view class="buttonWrapper">
+    <button class="dotBorder mainButton" bindtap='onReset'>重新开始</button>
+    <button class="dotBorder mainButton" bindtap='onExport'>导出图片</button>
+  </view>
+</view>

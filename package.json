@@ -1,0 +1,11 @@
+{
+  "name": "demo",
+  "version": "1.0.1",
+  "scripts": {
+    "compile": "",
+    "tsc": ""
+  },
+  "devDependencies": {
+    "typescript": "^3.3.3333"
+  }
+}

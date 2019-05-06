@@ -1,0 +1,6 @@
+.editor-outer {
+  margin: 0 auto;
+  padding: 20rpx;
+}
+.editor-item-wrap{height:160rpx; width:100%;white-space: nowrap;}  
+.editor-item{ width: 160rpx; height: 160rpx;  flex: 1; display: inline-block;}

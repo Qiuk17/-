@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container" >
+<!-- background -->
+<image class="myBackground" src="/res/images/bg_main_another.jpg" mode='aspectFill'></image>
+  <!-- 开始制作按钮 -->
+  <view class="buttonWrapper">
+  <button class="dotBorder mainButton" wx:if="{{loaded}}" bindgetuserinfo='onGetUserInfo' open-type='getUserInfo'>开始制作</button>
+  </view>
+</view>

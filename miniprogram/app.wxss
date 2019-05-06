@@ -1,0 +1,52 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+.myBackground{
+  position: absolute;
+  z-index: -2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+}
+.center{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.dotBorder {
+  border: 2px dashed white;
+  border-radius: 15px;
+}
+
+.buttonWrapper {
+  position: fixed;
+  margin-bottom: 100rpx;
+  bottom: 0rpx;
+}
+@import "/res/fonts/custom-font.wxss";
+.mainButton {
+  color: rgb(255, 255, 255);
+  background-color: rgba(255,255,255,0);
+  font-family: 'custom-font';
+  display: inline-block;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+@import "/res/fonts/custom-font-another.wxss";
+.reminder {
+  color: white;
+  font-family: 'fonteditor';
+  display: block;
+  text-align:center;
+  margin-top: 5rpx;
+}
